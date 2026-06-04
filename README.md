@@ -4,7 +4,7 @@
 
 ---
 
-[![License: GPL v2](https://img.shields.io/badge/License-GPL_v2-blue.svg)](https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html)
+[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 
 > A bilingual (Chinese/English) tarot card divination website that runs entirely locally. No server required — just open `index.html` in your browser.
 
@@ -82,4 +82,4 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 ## License
 
-This project is licensed under the **GNU General Public License v2.0** — see the [GNU website](https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html) for details.
+This project is licensed under the **GNU General Public License v3.0** — see the [GNU website](https://www.gnu.org/licenses/gpl-3.0) for details.

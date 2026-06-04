@@ -4,7 +4,7 @@
 
 ---
 
-[![License: GPL v2](https://img.shields.io/badge/License-GPL_v2-blue.svg)](https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html)
+[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 
 > 中英双语可切换的本地塔罗牌占卜网站，无需服务器，双击 `index.html` 即可使用。
 
@@ -82,4 +82,4 @@ Chrome、Firefox、Safari、Edge（最新 2 个版本）。
 
 ## 许可证
 
-本项目基于 **GNU 通用公共许可证 v2.0** 发布 — 详见 [GNU 官网](https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html)。
+本项目基于 **GNU 通用公共许可证 v3.0** 发布 — 详见 [GNU 官网](https://www.gnu.org/licenses/gpl-3.0)。
