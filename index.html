@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tarot Divination | 塔罗牌占卜</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<canvas id="stars-canvas"></canvas>
+
+<div class="app-container">
+
+  <!-- ===== Header ===== -->
+  <header class="header">
+    <div class="header-left" id="go-home">
+      <span class="header-logo">✦</span>
+      <span class="header-title" data-i18n="siteTitle"></span>
+    </div>
+    <div class="header-right">
+      <button class="nav-btn" id="btn-daily" data-i18n="dailyCard"></button>
+      <button class="nav-btn" id="btn-meanings" data-i18n="cardMeanings"></button>
+      <button class="lang-btn" id="btn-lang"></button>
+    </div>
+  </header>
+
+  <!-- ===== Main Content ===== -->
+  <main class="main-content">
+
+    <!-- Home Screen -->
+    <div id="screen-home" class="screen active">
+      <div class="home-hero">
+        <h1 data-i18n="welcomeTitle"></h1>
+        <p class="subtitle" data-i18n="welcomeDesc"></p>
+        <div class="home-actions">
+          <div class="home-action-card" id="action-reading">
+            <span class="icon">🔮</span>
+            <h3 data-i18n="startReading"></h3>
+            <p data-i18n="chooseSpreadDesc"></p>
+          </div>
+          <div class="home-action-card" id="action-daily">
+            <span class="icon">🌟</span>
+            <h3 data-i18n="dailyCard"></h3>
+            <p data-i18n="dailyCardDesc"></p>
+          </div>
+          <div class="home-action-card" id="action-meanings">
+            <span class="icon">📖</span>
+            <h3 data-i18n="cardMeanings"></h3>
+            <p data-i18n="searchCards"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Spread Selection Screen -->
+    <div id="screen-spreads" class="screen">
+      <div class="section-header">
+        <h2 data-i18n="chooseSpread"></h2>
+        <p data-i18n="chooseSpreadDesc"></p>
+      </div>
+      <div class="spread-grid" id="spread-grid"></div>
+    </div>
+
+    <!-- Question Screen -->
+    <div id="screen-question" class="screen">
+      <div class="question-container">
+        <h2 data-i18n="enterQuestion"></h2>
+        <p data-i18n="questionDesc"></p>
+        <textarea class="question-input" id="question-input" rows="3" data-i18n-placeholder="questionPlaceholder"></textarea>
+        <div class="question-buttons">
+          <button class="btn btn-primary" id="btn-shuffle" data-i18n="shuffleAndDeal"></button>
+          <button class="btn btn-secondary" id="btn-skip" data-i18n="skipQuestion"></button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Reading Screen -->
+    <div id="screen-reading" class="screen">
+      <div class="reading-header">
+        <h2 data-i18n="yourReading"></h2>
+        <p class="reading-question" id="reading-question"></p>
+        <p class="reading-hint" data-i18n="clickToReveal"></p>
+      </div>
+      <div class="spread-layout" id="spread-layout"></div>
+      <div class="reading-actions">
+        <button class="btn btn-primary btn-small" id="btn-reveal-all" data-i18n="revealAll"></button>
+        <button class="btn btn-secondary btn-small" id="btn-new-reading" data-i18n="newReading"></button>
+        <button class="btn btn-secondary btn-small" id="btn-back-spreads" data-i18n="back"></button>
+      </div>
+    </div>
+
+    <!-- Daily Card Screen -->
+    <div id="screen-daily" class="screen">
+      <div class="daily-container">
+        <h2 data-i18n="dailyCardTitle"></h2>
+        <p data-i18n="dailyCardDesc"></p>
+        <div class="daily-card-display" id="daily-card-display"></div>
+      </div>
+    </div>
+
+    <!-- Card Meanings Browser -->
+    <div id="screen-meanings" class="screen">
+      <div class="meanings-container">
+        <div class="section-header">
+          <h2 data-i18n="cardMeanings"></h2>
+        </div>
+        <div class="meanings-search">
+          <input type="text" class="search-input" id="search-input" data-i18n-placeholder="searchCards">
+        </div>
+        <div class="filter-tabs" id="filter-tabs"></div>
+        <div class="cards-grid" id="cards-grid"></div>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p data-i18n="footerText"></p>
+  </footer>
+</div>
+
+<!-- Shuffle Overlay -->
+<div class="shuffle-overlay" id="shuffle-overlay">
+  <div class="shuffle-cards">
+    <div class="shuffle-card-mini"></div>
+    <div class="shuffle-card-mini"></div>
+    <div class="shuffle-card-mini"></div>
+    <div class="shuffle-card-mini"></div>
+    <div class="shuffle-card-mini"></div>
+  </div>
+  <div class="shuffle-text" id="shuffle-text"></div>
+</div>
+
+<!-- Card Detail Modal -->
+<div class="modal-overlay" id="modal-overlay">
+  <div class="modal-content" id="modal-content">
+    <button class="modal-close" id="modal-close">&times;</button>
+    <div id="modal-body"></div>
+  </div>
+</div>
+
+<!-- Scripts (order matters) -->
+<script src="js/card-data.js"></script>
+<script src="js/spreads.js"></script>
+<script src="js/i18n.js"></script>
+<script src="js/app.js"></script>
+
+</body>
+</html>
