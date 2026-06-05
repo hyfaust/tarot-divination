@@ -57,6 +57,8 @@ tarot/
 │   ├── spreads.js      # 6 种牌阵定义
 │   ├── i18n.js         # 界面翻译
 │   └── app.js          # 核心逻辑
+├── docs/
+│   └── tarot-theory-zh.md  # 塔罗牌占卜理论详解
 ├── README.md           # 英文文档
 └── README_zh.md        # 中文文档
 ```
@@ -75,6 +77,10 @@ tarot/
 ## 浏览器支持
 
 Chrome、Firefox、Safari、Edge（最新 2 个版本）。
+
+## 参考文档
+
+- [塔罗牌占卜：理论、历史与心理学](docs/tarot-theory-zh.md) — 全面梳理塔罗牌的历史源流、象征体系、荣格心理学理论、牌阵设计原理及现代应用。
 
 ## 参考依据
 

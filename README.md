@@ -57,6 +57,8 @@ tarot/
 │   ├── spreads.js      # 6 spread definitions
 │   ├── i18n.js         # UI translations
 │   └── app.js          # Main application logic
+├── docs/
+│   └── tarot-theory-zh.md  # Tarot theory guide (Chinese)
 ├── README.md           # English documentation
 └── README_zh.md        # Chinese documentation
 ```
@@ -75,6 +77,10 @@ tarot/
 ## Browser Support
 
 Chrome, Firefox, Safari, Edge (latest 2 versions).
+
+## Documentation
+
+- [Tarot Divination Theory (Chinese)](docs/tarot-theory-zh.md) — A comprehensive guide covering tarot history, symbolism, psychological theories (Jung, synchronicity), spread design, and modern applications.
 
 ## Contributing
 
